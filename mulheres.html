@@ -1,0 +1,400 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HerLegacy - Legado das Mulheres</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --preto:#15110e;
+    --marrom:#2b1d14;
+    --cobre:#8d5a24;
+    --dourado:#d6a15f;
+    --creme:#f4e7d2;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--preto);
+    color:var(--creme);
+    font-family:'Poppins',sans-serif;
+}
+
+h1,h2,h3{
+    font-family:'Cinzel',serif;
+}
+
+
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(21,17,14,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    color:var(--dourado);
+    font-size:2rem;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.logo:hover{
+    transform:scale(1.05);
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--creme);
+    position:relative;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--dourado);
+}
+
+nav a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:var(--dourado);
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+
+
+.hero{
+    text-align:center;
+    padding:150px 10% 80px;
+}
+
+.galeria-topo{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+    max-width:1400px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.oval{
+    width:180px;
+    height:280px;
+    margin:auto;
+    border-radius:100px;
+    overflow:hidden;
+    border:3px solid var(--dourado);
+    box-shadow:0 0 25px rgba(214,161,95,.35);
+    transition:.4s;
+}
+
+.oval:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+.oval img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.hero h1{
+    color:var(--dourado);
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.botao{
+    margin-top:30px;
+    background:var(--cobre);
+    color:white;
+    border:none;
+    padding:14px 35px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:var(--dourado);
+    color:black;
+    transform:scale(1.05);
+}
+
+
+
+.sobre{
+    background:var(--marrom);
+    padding:80px 10%;
+    text-align:center;
+}
+
+.sobre h2{
+    color:var(--dourado);
+    margin-bottom:20px;
+}
+
+.sobre p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.9;
+}
+
+
+
+.personalidades{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.personalidades h2{
+    color:var(--dourado);
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:260px;
+    background:#201712;
+    padding:25px;
+    border-radius:20px;
+    transition:.4s;
+    border:1px solid rgba(214,161,95,.2);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(214,161,95,.25);
+}
+
+.card h3{
+    color:var(--dourado);
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+
+
+footer{
+    background:black;
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+
+
+
+@media(max-width:1200px){
+
+.galeria-topo{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.galeria-topo{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.oval{
+    width:150px;
+    height:230px;
+}
+
+nav{
+    gap:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">3° ano - IFPI</div>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#mulheres">Mulheres</a>
+</nav>
+
+</header>
+
+<section class="hero" id="inicio">
+
+<div class="galeria-topo">
+
+<div class="oval">
+<img src="Downloads/WhatsApp Image 2026-06-16 at 10.12.27.jpeg" alt="Cleópatra">
+</div>
+
+<div class="oval">
+<img src="Downloads/WhatsApp Image 2026-06-16 at 10.13.45.jpeg" alt="Marie Curie">
+</div>
+
+<div class="oval">
+<img src="Downloads/WhatsApp Image 2026-06-16 at 10.21.06.jpeg" alt="Frida Kahlo">  
+</div>
+
+<div class="oval">
+<img src="Downloads/WhatsApp Image 2026-06-16 at 10.46.31.jpeg" alt="Anne Frank">
+</div>
+
+<div class="oval">
+<img src="Downloads/WhatsApp Image 2026-06-16 at 10.33.52.jpeg" alt="Hipátia">
+</div>
+
+
+
+<div class="oval">
+<img src="Downloads/WhatsApp Image 2026-06-16 at 10.37.15.jpeg" alt="Anne Frank">
+</div>
+
+</div>
+
+<h1>LEGADO DAS MULHERES</h1>
+
+<p>
+Conheça mulheres que transformaram a história da humanidade através da ciência,
+arte, literatura, filosofia, educação e da luta pelos direitos humanos.
+</p>
+
+<button class="botao" onclick="rolarParaMulheres()">
+Explorar Histórias
+</button>
+
+</section>
+
+<section class="sobre" id="sobre">
+
+<h2>A Voz das Mulheres na História</h2>
+
+<p>
+Ao longo dos séculos, mulheres contribuíram para o desenvolvimento das sociedades
+em diversas áreas. Apesar das desigualdades enfrentadas, muitas delas deixaram
+marcas profundas por meio de descobertas científicas, obras artísticas, liderança,
+educação e defesa dos direitos humanos.
+</p>
+
+</section>
+
+<section class="personalidades" id="mulheres">
+
+<h2>Mulheres em Destaque</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Cleópatra</h3>
+<p>Rainha do Egito e uma das figuras políticas mais influentes da Antiguidade.</p>
+</div>
+
+
+
+<div class="card">
+<h3>Frida Kahlo</h3>
+<p>Artista mexicana reconhecida mundialmente por suas obras e legado cultural.</p>
+</div>
+
+<div class="card">
+<h3>Hipátia de Alexandria</h3>
+<p>Filósofa, matemática e astrônoma considerada uma das maiores intelectuais da Antiguidade.</p>
+</div>
+
+<div class="card">
+<h3>Malala Yousafzai</h3>
+<p>Ativista paquistanesa pela educação feminina e vencedora do Nobel da Paz.</p>
+</div>
+
+
+
+<div class="card">
+<h3>Han Kang</h3>
+<p>Escritora sul-coreana de reconhecimento internacional por sua literatura contemporânea.</p>
+</div>
+
+<div class="card">
+<h3>Anarcha Westcott</h3>
+<p>Figura histórica importante nos debates sobre ética médica e direitos humanos.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<script>
+
+function rolarParaMulheres(){
+    document.getElementById("mulheres").scrollIntoView({
+        behavior:"smooth"
+    });
+}
+
+</script>
+
+</body>
+</html>
+```
