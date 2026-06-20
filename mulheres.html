@@ -1,283 +1,26 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HerLegacy - Legado das Mulheres</title>
+<title>Legado das Mulheres</title>
+    <link rel="stylesheet" href="mulheres.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<style>
-
-:root{
-    --preto:#15110e;
-    --marrom:#2b1d14;
-    --cobre:#8d5a24;
-    --dourado:#d6a15f;
-    --creme:#f4e7d2;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:var(--preto);
-    color:var(--creme);
-    font-family:'Poppins',sans-serif;
-}
-
-h1,h2,h3{
-    font-family:'Cinzel',serif;
-}
-
-
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:rgba(21,17,14,.95);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-}
-
-.logo{
-    color:var(--dourado);
-    font-size:2rem;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.logo:hover{
-    transform:scale(1.05);
-}
-
-nav{
-    display:flex;
-    gap:30px;
-}
-
-nav a{
-    text-decoration:none;
-    color:var(--creme);
-    position:relative;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:var(--dourado);
-}
-
-nav a::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-5px;
-    width:0;
-    height:2px;
-    background:var(--dourado);
-    transition:.3s;
-}
-
-nav a:hover::after{
-    width:100%;
-}
-
-
-
-.hero{
-    text-align:center;
-    padding:150px 10% 80px;
-}
-
-.galeria-topo{
-    display:grid;
-    grid-template-columns:repeat(6,1fr);
-    gap:20px;
-    max-width:1400px;
-    margin:auto;
-    margin-bottom:50px;
-}
-
-.oval{
-    width:180px;
-    height:280px;
-    margin:auto;
-    border-radius:100px;
-    overflow:hidden;
-    border:3px solid var(--dourado);
-    box-shadow:0 0 25px rgba(214,161,95,.35);
-    transition:.4s;
-}
-
-.oval:hover{
-    transform:translateY(-10px) scale(1.05);
-}
-
-.oval img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-.hero h1{
-    color:var(--dourado);
-    font-size:4rem;
-    margin-bottom:20px;
-}
-
-.hero p{
-    max-width:800px;
-    margin:auto;
-    line-height:1.8;
-    font-size:1.1rem;
-}
-
-.botao{
-    margin-top:30px;
-    background:var(--cobre);
-    color:white;
-    border:none;
-    padding:14px 35px;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:1rem;
-    transition:.3s;
-}
-
-.botao:hover{
-    background:var(--dourado);
-    color:black;
-    transform:scale(1.05);
-}
-
-
-
-.sobre{
-    background:var(--marrom);
-    padding:80px 10%;
-    text-align:center;
-}
-
-.sobre h2{
-    color:var(--dourado);
-    margin-bottom:20px;
-}
-
-.sobre p{
-    max-width:900px;
-    margin:auto;
-    line-height:1.9;
-}
-
-
-
-.personalidades{
-    padding:80px 10%;
-    text-align:center;
-}
-
-.personalidades h2{
-    color:var(--dourado);
-    margin-bottom:40px;
-}
-
-.cards{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-}
-
-.card{
-    width:260px;
-    background:#201712;
-    padding:25px;
-    border-radius:20px;
-    transition:.4s;
-    border:1px solid rgba(214,161,95,.2);
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(214,161,95,.25);
-}
-
-.card h3{
-    color:var(--dourado);
-    margin-bottom:10px;
-}
-
-.card p{
-    line-height:1.7;
-}
-
-
-
-footer{
-    background:black;
-    text-align:center;
-    padding:30px;
-    color:#999;
-}
-
-
-
-@media(max-width:1200px){
-
-.galeria-topo{
-    grid-template-columns:repeat(3,1fr);
-}
-
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:2.5rem;
-}
-
-.galeria-topo{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.oval{
-    width:150px;
-    height:230px;
-}
-
-nav{
-    gap:15px;
-}
-
-}
-
-</style>
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">3° ano - IFPI</div>
+<div class="logo"></div>
 
 <nav>
 <a href="#inicio">Início</a>
 <a href="#sobre">Sobre</a>
 <a href="#mulheres">Mulheres</a>
+<a href="#criadores">Criadores</a>
 </nav>
 
 </header>
@@ -287,29 +30,29 @@ nav{
 <div class="galeria-topo">
 
 <div class="oval">
-<img src="Downloads/WhatsApp Image 2026-06-16 at 10.12.27.jpeg" alt="Cleópatra">
+<img src="imagens/WhatsApp Image 2026-06-19 at 21.28.43 (1).jpeg" alt="Cleópatra">
 </div>
 
 <div class="oval">
-<img src="Downloads/WhatsApp Image 2026-06-16 at 10.13.45.jpeg" alt="Marie Curie">
+<img src="imagens/WhatsApp Image 2026-06-19 at 21.28.43 (2).jpeg" alt="Marie Curie">
 </div>
 
 <div class="oval">
-<img src="Downloads/WhatsApp Image 2026-06-16 at 10.21.06.jpeg" alt="Frida Kahlo">  
+<img src="imagens/WhatsApp Image 2026-06-19 at 21.28.43.jpeg" alt="han Kang">  
 </div>
 
 <div class="oval">
-<img src="Downloads/WhatsApp Image 2026-06-16 at 10.46.31.jpeg" alt="Anne Frank">
+<img src="imagens/WhatsApp Image 2026-06-19 at 21.28.44 (1).jpeg" alt="Anarcha Westcott">
 </div>
 
 <div class="oval">
-<img src="Downloads/WhatsApp Image 2026-06-16 at 10.33.52.jpeg" alt="Hipátia">
+<img src="imagens/WhatsApp Image 2026-06-19 at 21.28.44 (2).jpeg" alt="Hipátia">
 </div>
 
 
 
 <div class="oval">
-<img src="Downloads/WhatsApp Image 2026-06-16 at 10.37.15.jpeg" alt="Anne Frank">
+<img src="imagens/WhatsApp Image 2026-06-19 at 21.28.44.jpeg" alt="Malala">
 </div>
 
 </div>
@@ -331,58 +74,364 @@ Explorar Histórias
 
 <h2>A Voz das Mulheres na História</h2>
 
-<p>
-Ao longo dos séculos, mulheres contribuíram para o desenvolvimento das sociedades
-em diversas áreas. Apesar das desigualdades enfrentadas, muitas delas deixaram
-marcas profundas por meio de descobertas científicas, obras artísticas, liderança,
-educação e defesa dos direitos humanos.
+<p>Ao longo da história, algumas pessoas se destacaram por desafiar os limites impostos por sua época e transformar a maneira como a sociedade compreende o conhecimento, a cultura, a ciência e a liderança.
+Em diferentes períodos e contextos, suas contribuições ajudaram a ampliar horizontes, inspirar mudanças e influenciar gerações futuras.
+Seja por meio da busca pelo saber, da produção artística, das descobertas científicas, da coragem diante dos desafios ou da capacidade de impactar milhões de pessoas,
+essas figuras deixaram marcas que ultrapassam fronteiras e permanecem relevantes até os dias atuais. Suas trajetórias demonstram que a determinação,
+a criatividade e a busca por novos caminhos são capazes de transformar não apenas a própria realidade, mas também o mundo ao redor.
+Nesta apresentação, conheceremos personalidades que, em diferentes momentos da história, contribuíram significativamente para o desenvolvimento humano e deixaram um legado que continua inspirando pessoas em todo o mundo.
 </p>
 
 </section>
 
 <section class="personalidades" id="mulheres">
 
-<h2>Mulheres em Destaque</h2>
+    <h2>Mulheres em Destaque</h2>
 
-<div class="cards">
+    <div class="cards">
 
-<div class="card">
-<h3>Cleópatra</h3>
-<p>Rainha do Egito e uma das figuras políticas mais influentes da Antiguidade.</p>
-</div>
+        <!-- CLEÓPATRA -->
+        <div class="card">
+            <div class="card-inner">
+    
+                <div class="card-front">
+                    <h3>Cleópatra</h3>
+                    <p>Última rainha do Egito e uma das líderes mais influentes da Antiguidade.</p>
+                </div>
+    
+                <div class="card-back">
+                    <h3>Cleópatra</h3>
+    
+                    <h4>Quem foi</h4>
+                    <p>Governou o Egito de 51 a 30 a.C. Falava várias línguas e era conhecida por sua inteligência política e diplomacia.</p>
+    
+                    <h4>Destaques</h4>
+                    <p>• Dominava vários idiomas.</p>
+                    <p>• Grande estrategista política.</p>
+                    <p>• Aliada de Júlio César e Marco Antônio.</p>
+    
+                    <h4>Legado</h4>
+                    <p>Sua morte marcou o fim da era helenística e o início do domínio romano sobre o Egito. Tornou-se ícone cultural eternizado na arte, literatura e cinema.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- MARIA QUITÉRIA -->
+        <div class="card">
+            <div class="card-inner">
+    
+                <div class="card-front">
+                    <h3>Maria Quitéria</h3>
+                    <p>Heroína da Independência do Brasil.</p>
+                </div>
+    
+                <div class="card-back">
+                    <h3>Maria Quitéria</h3>
+    
+                    <h4>Nascimento</h4>
+                    <p>27 de julho de 1792, na Fazenda do Licurizeiro, em Feira de Santana, Bahia. Filha de fazendeiros, cresceu aprendendo a cavalgar, caçar e usar armas — atividades incomuns para mulheres da época.</p>
+    
+                    <h4>Trajetória</h4>
+                    <p>Em 1822, disfarçou-se de homem para se alistar no Batalhão dos Voluntários do Príncipe.
+                        Mesmo após a descoberta de sua identidade, foi autorizada a permanecer devido ao excelente 
+                        desempenho em combate. Participou de importantes batalhas na Bahia contra as forças portuguesas, 
+                        destacando-se pela bravura e disciplina.</p>
+                    
+    
+                    <h4>Conquistas</h4>
+                    <p>Primeira mulher a integrar oficialmente uma unidade militar brasileira. 
+                        Recebeu a Ordem Imperial do Cruzeiro de Dom Pedro I. Tornou-se patrona 
+                        do Quadro Complementar de Oficiais do Exército Brasileiro e está no Livro 
+                        dos Heróis e Heroínas da Pátria.</p>
+                    
+    
+                    <h4>Legado</h4>
+                    <p>Símbolo da coragem e da luta das mulheres por igualdade de oportunidades. 
+                        Abriu caminho para a participação feminina nas Forças Armadas e inspira 
+                        gerações como referência de patriotismo e determinação.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- HIPÁTIA -->
+        <div class="card">
+            <div class="card-inner">
+    
+                <div class="card-front">
+                    <h3>Hipátia</h3>
+                    <p>Filósofa, matemática e astrônoma.</p>
+                </div>
+    
+                <div class="card-back">
+                    <h3>Hipátia</h3>
+    
+                    <h4>Nascimento</h4>
+                    <p>Cerca de 350–370 d.C., em Alexandria, Egito. 
+                        Líder da Escola Neoplatônica, atraindo estudantes 
+                        e pensadores de todo o Império Romano com sua imensa sabedoria.</p>
+    
+                    <h4>Contribuições</h4>
+                    <p>Desenvolveu comentários sobre a aritmética de Diofanto e as cônicas de Apolônio. 
+                        Contribuiu no design e calibração de instrumentos científicos como o astrolábio e o 
+                        hidrômetro.</p>
+                    
+    
+                    <h4>Legado</h4>
+                    <p>Símbolo universal da busca pelo conhecimento, 
+                        da razão e da liberdade de pensamento. Sua vida inspirou obras de arte, 
+                        literatura e debates sobre o papel das mulheres na ciência.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- MALALA -->
+        <div class="card">
+            <div class="card-inner">
+    
+                <div class="card-front">
+                    <h3>Malala Yousafzai</h3>
+                    <p>Ativista pela educação feminina.</p>
+                </div>
+    
+                <div class="card-back">
+                    <h3>Malala</h3>
+    
+                    <h4>Nascimento</h4>
+                    <p>12 de julho de 1997, em Mingora, Vale do Swat, Paquistão. Defensora do direito à educação, especialmente para meninas.</p>
+    
+                    <h4>Caminhada</h4>
+                    <p>Em 2012, sobreviveu a um atentado do Talibã por defender a educação feminina. Em vez de se calar, 
+                        tornou-se uma voz global ainda mais forte pela causa.</p>
+                    
+    
+                    <h4>Conquistas</h4>
+                    <p>Co-vencedora do Prêmio Nobel da Paz em 2014, tornando-se a pessoa mais jovem a receber um Nobel. Fundou a Malala Fund, dedicada a garantir educação para meninas em todo o mundo. Graduada em Filosofia, Política e Economia pela University of Oxford.
 
-
-
-<div class="card">
-<h3>Frida Kahlo</h3>
-<p>Artista mexicana reconhecida mundialmente por suas obras e legado cultural.</p>
-</div>
-
-<div class="card">
-<h3>Hipátia de Alexandria</h3>
-<p>Filósofa, matemática e astrônoma considerada uma das maiores intelectuais da Antiguidade.</p>
-</div>
-
-<div class="card">
-<h3>Malala Yousafzai</h3>
-<p>Ativista paquistanesa pela educação feminina e vencedora do Nobel da Paz.</p>
-</div>
-
-
-
-<div class="card">
-<h3>Han Kang</h3>
-<p>Escritora sul-coreana de reconhecimento internacional por sua literatura contemporânea.</p>
-</div>
-
-<div class="card">
-<h3>Anarcha Westcott</h3>
-<p>Figura histórica importante nos debates sobre ética médica e direitos humanos.</p>
-</div>
-
-</div>
+                    </p>
+                    
+    
+                    <h4>Legado</h4>
+                    <p> Símbolo global da defesa da educação e dos direitos das mulheres. Inspirou novas gerações a participarem de causas sociais e demonstrou como a educação é ferramenta de transformação.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+       
+        <div class="card">
+            <div class="card-inner">
+    
+                <div class="card-front">
+                    <h3>Marie Curie</h3>
+                    <p>Pioneira nos estudos da radioatividade.</p>
+                </div>
+    
+                <div class="card-back">
+                    <h3>Marie Curie</h3>
+    
+                    <h4>Nascimento</h4>
+                    <p>7 de novembro de 1867, em Varsóvia, Polônia. Faleceu em 4 de julho de 1934, na França. Formada pela Universidade de Paris (Sorbonne).</p>
+    
+                    <h4>Descobertas</h4>
+                    <p>Descobriu os elementos químicos Polônio e Rádio. Desenvolveu pesquisas pioneiras sobre a radioatividade e 
+                    criou métodos para o isolamento de elementos radioativos, abrindo caminho para a radioterapia no tratamento do câncer.</p>
+                    
+    
+                    <h4>Conquistas</h4>
+                    <p>Nobel de Física em 1903 e Nobel de Química em 1911. 
+                        Foi a primeira mulher a ganhar um Nobel e a primeira pessoa a receber dois Prêmios Nobel em áreas científicas diferentes.</p>
+                   
+    
+                    <h4>Legado</h4>
+                    <p>Uma das maiores cientistas de todos os tempos. Durante a Primeira Guerra Mundial, 
+                        criou unidades móveis de radiografia para atender soldados feridos. Tornou-se símbolo 
+                        da dedicação à ciência e da igualdade de oportunidades para mulheres.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+       
+        <div class="card">
+            <div class="card-inner">
+    
+                <div class="card-front">
+                    <h3>Han Kang</h3>
+                    <p>Escritora sul-coreana premiada.</p>
+                </div>
+    
+                <div class="card-back">
+                    <h3>Han Kang</h3>
+    
+                    <h4>Nascimento</h4>
+                    <p>27 de novembro de 1970, em Gwangju, Coreia do Sul. Formada em Literatura Coreana pela Universidade Yonsei.</p>
+    
+                    <h4>Livros feitos</h4>
+                    <p>Autora de A Vegetariana (2007), Atos Humanos (2014), O Livro Branco (2016), Lições de Grego (2011) e We Do Not Part (2021). Suas obras foram traduzidas para dezenas de idiomas.</p>
+                    
+    
+                    <h4>Conquistas</h4>
+                    <p>Vencedora do International Booker Prize em 2016 por A Vegetariana. Primeira escritora sul-coreana a receber o Prêmio Nobel de Literatura, em 2024. Reconhecida por sua escrita poética e profunda.</p>
+                    
+    
+                    <h4>Legado</h4>
+                    <p>Preservou a memória de acontecimentos históricos da Coreia do Sul por meio da literatura. 
+                        Ampliou a visibilidade da literatura sul-coreana mundialmente e consolidou a literatura como 
+                        ferramenta de reflexão e transformação social.</p>
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
 
 </section>
+
+
+<section class="criadores" id="criadores">
+
+    <h2>Criadores do Projeto</h2>
+
+    <p class="subtitulo">
+        Equipe responsável pelo desenvolvimento do site Legado das Mulheres.
+    </p>
+
+    <div class="criadores-grid">
+
+        <div class="criador-card">
+            <div class="criador-inner">
+                <div class="criador-front">
+                    <img src="imagens/WhatsApp Image 2026-06-19 at 17.17.19.jpeg" alt="">
+                    <h3>Criador 1</h3>
+                </div>
+                <div class="criador-back">
+                    <h3>Front-end</h3>
+                    <p>Responsável pela estrutura HTML e estilização CSS.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="criador-card">
+            <div class="criador-inner">
+                <div class="criador-front">
+                    <img src="imagens/WhatsApp Image 2026-06-19 at 17.30.55.jpeg" alt="">
+                    <h3>Criador 2</h3>
+                </div>
+                <div class="criador-back">
+                    <h3>Designer</h3>
+                    <p>Responsável pela identidade visual do projeto.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="criador-card">
+            <div class="criador-inner">
+                <div class="criador-front">
+                    <img src="imagens/WhatsApp Image 2026-06-19 at 19.38.23.jpeg" alt="">
+                    <h3>Criador 3</h3>
+                </div>
+                <div class="criador-back">
+                    <h3>Pesquisador</h3>
+                    <p>Organização e pesquisa de conteúdo histórico.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="criador-card">
+            <div class="criador-inner">
+                <div class="criador-front">
+                    <img src="imagens/WhatsApp Image 2026-06-19 at 19.41.55.jpeg" alt="">
+                    <h3>Criador 4</h3>
+                </div>
+                <div class="criador-back">
+                    <h3>Back-end</h3>
+                    <p>Auxílio na lógica e interações do site.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="criador-card">
+            <div class="criador-inner">
+                <div class="criador-front">
+                    <img src="imagens/WhatsApp Image 2026-06-19 at 20.15.54.jpeg" alt="">
+                    <h3>Criador 5</h3>
+                </div>
+                <div class="criador-back">
+                    <h3>Pesquisador</h3>
+                    <p>Coleta de informações e revisão de conteúdo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="criador-card">
+            <div class="criador-inner">
+                <div class="criador-front">
+                    <img src="imagens/WhatsApp Image 2026-06-19 at 20.19.01.jpeg" alt="">
+                    <h3>Criador 6</h3>
+                </div>
+                <div class="criador-back">
+                    <h3>Designer</h3>
+                    <p>Responsável pelo visual dos cards e layout.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="criador-card">
+            <div class="criador-inner">
+                <div class="criador-front">
+                    <img src="imagens/WhatsApp Image 2026-06-19 at 21.30.27.jpeg" alt="">
+                    <h3>Criador 7</h3>
+                </div>
+                <div class="criador-back">
+                    <h3>Documentação</h3>
+                    <p>Organização e documentação do projeto.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="criador-card">
+            <div class="criador-inner">
+                <div class="criador-front">
+                    <img src="imagens/WhatsApp Image 2026-06-19 at 21.42.38.jpeg" alt="">
+                    <h3>Criador 8</h3>
+                </div>
+                <div class="criador-back">
+                    <h3>Coordenação</h3>
+                    <p>Organização geral da equipe e execução.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>Legado das Mulheres</h3>
+
+    <p>
+        Projeto desenvolvido por estudantes do 3º ano do curso Técnico em Informática
+        do Instituto Federal do Piauí.
+    </p>
+
+    <p> Campus Parnaíba</p>
+
+    <div class="footer-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#mulheres">Mulheres</a>
+        <a href="#criadores">Criadores</a>
+        
+    </div>
+
+    <a href="#inicio" class="voltar-topo">↑ Voltar ao topo</a>
+
+    <p>© 2026 | Todos os direitos reservados</p>
+</footer>
+
 
 
 <script>
@@ -397,4 +446,3 @@ function rolarParaMulheres(){
 
 </body>
 </html>
-```
